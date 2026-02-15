@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkaak Enterprise</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 60px 20px 40px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .products {
+            max-width: 1100px;
+            margin: 30px auto 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            height: 150px;
+            background: #f2f2f2;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .price {
+            color: #667eea;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Alkaak Enterprise</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="signup/">Login</a>
+        <a href="signup/">Signup</a>
+    </div>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h1>Welcome to Alkaak Enterprise</h1>
+    <p>Your trusted online shopping destination</p>
+</div>
+
+<!-- PRODUCT SECTION -->
+<div class="products">
+
+    <div class="product-card">
+        <div class="product-img">📱</div>
+        <div class="product-name">Smart Phone</div>
+        <div class="price">₹15,999</div>
+        <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">💻</div>
+        <div class="product-name">Laptop</div>
+        <div class="price">₹55,999</div>
+        <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">🎧</div>
+        <div class="product-name">Headphones</div>
+        <div class="price">₹2,499</div>
+        <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">⌚</div>
+        <div class="product-name">Smart Watch</div>
+        <div class="price">₹3,999</div>
+        <button class="btn">Add to Cart</button>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Alkaak Enterprise. All rights reserved.
+</div>
+
+</body>
+</html>
